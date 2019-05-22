@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/registryLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:id="@+id/registry_text"
+        android:text="财大抢座注册中心"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@id/registry_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/app_icon"
+        android:src="@mipmap/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <EditText
+        android:layout_below="@id/app_icon"
+        android:id="@+id/registry_user_name"
+        android:hint="学号"
+        android:inputType="number"
+        android:layout_margin="30dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:background="@drawable/shape_wihte_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/registry_password"
+        android:layout_below="@id/registry_user_name"
+        android:hint="密码"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/shape_wihte_frame"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/registry"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/registry_password"
+        android:hint="注册"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:id="@+id/registry_bar"
+        android:layout_below="@id/registry"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

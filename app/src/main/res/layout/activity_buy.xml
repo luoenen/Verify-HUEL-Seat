@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/buyLayout">
+
+    <TableLayout
+        android:id="@+id/tl4"
+        android:background="#f5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_margin="10dp"
+        android:text="按天付费：1元/D"
+        android:layout_below="@id/tl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:id="@+id/tl5"
+        android:background="#f5f5f5"
+        android:layout_below="@id/day"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/week"
+        android:layout_margin="10dp"
+        android:text="按周付费：5元/W"
+        android:layout_below="@id/tl5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:id="@+id/tl6"
+        android:background="#f5f5f5"
+        android:layout_below="@id/week"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_margin="10dp"
+        android:text="按月付费：20元/M"
+        android:layout_below="@id/tl6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:id="@+id/tl7"
+        android:background="#f5f5f5"
+        android:layout_below="@id/month"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/term"
+        android:layout_margin="10dp"
+        android:text="按期付费：100元/T"
+        android:layout_below="@id/tl7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:id="@+id/tl8"
+        android:background="#f5f5f5"
+        android:layout_below="@id/term"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </TableLayout>
+    <TextView
+        android:id="@+id/information"
+        android:layout_below="@id/tl8"
+        android:layout_margin="10dp"
+        android:text="价格说明：微信订阅 19939374645"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/introduce"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/information"
+        android:layout_width="wrap_content"
+        android:padding="4dp"
+        android:text="\t\t\t\t长期支持考研党选座，服务器费用以及开发支持都需要维护，因此采取付费订阅，另外有多操作系统macOS、Linux、Windows平台程序供用户自主选择，咨询19939374645 获取即时信息。"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/share_text"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:text="分享给到QQ"
+        android:textSize="20sp"
+        android:layout_below="@id/introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_margin="10dp"
+        android:layout_below="@id/share_text"
+        android:background="@mipmap/qq"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
